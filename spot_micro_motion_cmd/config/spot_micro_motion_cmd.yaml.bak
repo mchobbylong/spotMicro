@@ -11,25 +11,25 @@ body_length: 0.1475
 # Stance parameters
 default_stand_height: 0.155
 stand_front_x_offset: 0.015
-stand_back_x_offset: -0.015
+stand_back_x_offset: 0.0
 lie_down_height: 0.083
 lie_down_foot_x_offset: 0.065 
 
 # Servo parameters
 num_servos: 16
 servo_max_angle_deg: 82.5
-RF_3: {num: 13, center: 307, range: 353.8, direction:  1, center_angle_deg:  47.10}
-RF_2: {num: 14, center: 307, range: 410.7, direction:  1, center_angle_deg: -57.64}
-RF_1: {num: 15, center: 307, range: 403.3, direction: -1, center_angle_deg:   7.77}
-RB_3: {num: 5,  center: 307, range: 381.3, direction:  1, center_angle_deg:  58.41}
-RB_2: {num: 6,  center: 307, range: 388.7, direction:  1, center_angle_deg: -54.76}
-RB_1: {num: 7,  center: 307, range: 341.0, direction: -1, center_angle_deg:   4.84}
-LB_3: {num: 1,  center: 307, range: 386.8, direction:  1, center_angle_deg: -55.02}
-LB_2: {num: 2,  center: 307, range: 386.8, direction:  1, center_angle_deg:  55.88}
-LB_1: {num: 3,  center: 307, range: 330.0, direction:  1, center_angle_deg:   7.00}
-LF_3: {num: 9,  center: 307, range: 390.5, direction:  1, center_angle_deg: -53.24}
-LF_2: {num: 10, center: 307, range: 392.3, direction:  1, center_angle_deg:  60.14}
-LF_1: {num: 11, center: 307, range: 341.0, direction:  1, center_angle_deg:   2.42}
+RF_3: {num: 13,  center: 307,range: 353.8,direction:  1, center_angle_deg: 47.10}
+RF_2: {num: 14,  center: 307,range: 410.7,direction:  1, center_angle_deg: -57.64}
+RF_1: {num: 15,  center: 307,range: 403.3,direction: -1, center_angle_deg: 7.77}
+RB_3: {num: 5,  center: 307,range: 381.3,direction:  1, center_angle_deg:  58.41}
+RB_2: {num: 6,  center: 307,range: 388.7,direction:  1, center_angle_deg: -54.76}
+RB_1: {num: 7,  center: 307,range: 341.0,direction:  -1, center_angle_deg: 4.84}
+LB_3: {num: 1,  center: 307,range: 386.8,direction:  1, center_angle_deg: -55.02}
+LB_2: {num: 2,  center: 307,range: 386.8,direction:  1, center_angle_deg:  55.88}
+LB_1: {num: 3,  center: 307,range: 330.0,direction: 1, center_angle_deg:   7.00}
+LF_3: {num: 9, center: 307,range: 390.5,direction:  1, center_angle_deg:  -53.24}
+LF_2: {num: 10, center: 307,range: 392.3,direction:  1, center_angle_deg:  60.14}
+LF_1: {num: 11, center: 307,range: 341.0,direction:  1, center_angle_deg:  2.42}
 
 # Control Parameters
 transit_tau: 0.3 # Time constant in seconds for transition state first order filters
@@ -62,3 +62,4 @@ dt: 0.02 #50 hz
 # Debug mode
 debug_mode: false
 plot_mode: true
+
