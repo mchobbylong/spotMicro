@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-Class for testing control of 12 servos. It assumes ros-12cpwmboard has been
+Class for testing control of 16 servos. It assumes ros-i2cpwmboard has been
 installed
 """
 import rospy
@@ -9,10 +9,10 @@ import sys, select, termios, tty # For terminal keyboard key press reading
 from i2cpwm_board.msg import Servo, ServoArray
 
 # Global variable for number of servos
-numServos = 12 
+numServos = 16
 
 msg = """
-Servo Control Module for 12 Servos.
+Servo Control Module for 16 Servos.
 
 Enter one of the following options:
 -----------------------------
@@ -132,8 +132,8 @@ class SpotMicroServoControl():
         # Intialize empty servo dictionary
         self.servos = {}
 
-        # Create a servo dictionary with 12 ServoConvert objects
-        # keys: integers 0 through 12
+        # Create a servo dictionary with 16 ServoConvert objects
+        # keys: integers 0 through 16
         # values: ServoConvert objects
         for i in range(numServos):
             self.servos[i] = ServoConvert(id=i)
@@ -213,7 +213,7 @@ class SpotMicroServoControl():
                     # First get servo number to command
                     nSrv = -1
                     while (1):
-                        userInput = input('Which servo to control? Enter a number 1 through 12: ')
+                        userInput = input('Which servo to control? Enter a number 1 through 16: ')
                         
                         if userInput not in range(1,numServos+1):
                             print("Invalid servo number entered, try again")
