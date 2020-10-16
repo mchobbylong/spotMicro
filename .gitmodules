@@ -4,3 +4,6 @@
 [submodule "spot_micro_plot/scripts/spot_micro_kinematics_python"]
 	path = spot_micro_plot/scripts/spot_micro_kinematics_python
 	url = git@github.com:mike4192/spot_micro_kinematics_python.git
+[submodule "spot_micro_keyboard_command\\scripts\\Gamepad"]
+	path = spot_micro_keyboard_command\\scripts\\Gamepad
+	url = git@github.com:mchobbylong/Gamepad
